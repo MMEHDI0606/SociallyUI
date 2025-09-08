@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/page3"
+    android:background="#FAFAFA"
+    android:padding="24dp">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginBottom="48dp"
+        android:contentDescription="Back" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="32sp"
+        android:textColor="#B85450"
+        android:fontFamily="serif"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="64dp" />
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="asad_khasanov"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:background="@drawable/input_background_login"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Password"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:textColorHint="#999999"
+        android:background="@drawable/input_background_login"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp" />
+
+
+    <TextView
+        android:id="@+id/textViewForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_gravity="end"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Log in"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/btn1_login"
+        android:layout_marginBottom="24dp" />
+
+    <!-- OR Divider -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Spacer to push content to bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/signup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign up."
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Bottom App Name -->
+    <View
+        android:layout_width="48dp"
+        android:layout_height="2dp"
+        android:background="#B85450"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Socially"
+        android:textSize="14sp"
+        android:textColor="#B85450"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>

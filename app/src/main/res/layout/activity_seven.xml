@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Header with Search -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="#FFFFFF">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginRight="14dp"
+            android:contentDescription="Back" />
+
+        <!-- Search Bar -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search_bar"
+            android:text="internshala"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:drawableTint="#999999"
+            android:drawableRight="@drawable/ic_clear"
+            android:singleLine="true"
+            android:inputType="text"
+            android:imeOptions="actionSearch" />
+
+        <!-- Clear Button -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textSize="16sp"
+            android:textColor="#B85450"
+            android:layout_marginLeft="14dp"
+            android:padding="4dp" />
+
+    </LinearLayout>
+
+    <!-- Search Filter Tabs -->
+    <LinearLayout
+        android:id="@+id/filterTabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/headerLayout"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!-- Top Tab (Active) -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginRight="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <!-- Active underline -->
+            <View
+                android:layout_width="24dp"
+                android:layout_height="2dp"
+                android:background="#333333"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Accounts Tab -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Accounts"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:layout_marginRight="32dp" />
+
+        <!-- Tags Tab -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Tags"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:layout_marginRight="32dp" />
+
+        <!-- Places Tab -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Places"
+            android:textSize="16sp"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+    <!-- Search Results -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filterTabs"
+        android:layout_above="@id/bottomNavigation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <!-- Account Result -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Profile Image -->
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/img_internshala_logo"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <!-- User Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="internshala"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="internshala"
+                        android:textSize="14sp"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Hashtag Results -->
+            <!-- #internshala -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Hashtag Icon -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_hashtag_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="-27dp"
+                    android:gravity="center" />
+
+                <!-- Hashtag Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#internshala"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000+ post"
+                        android:textSize="14sp"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- #internshala_nomoretheory_challange -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Hashtag Icon -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_hashtag_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="-27dp"
+                    android:gravity="center" />
+
+                <!-- Hashtag Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#internshala_nomoretheory_challange"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500+ post"
+                        android:textSize="14sp"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Internshala Location -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Hashtag Icon -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_hashtag_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="-27dp"
+                    android:gravity="center" />
+
+                <!-- Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Internshala"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="internshala, B-610, Unitech Business Zone,..."
+                        android:textSize="14sp"
+                        android:textColor="#999999"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- internshala.studentpartner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Hashtag Icon -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_hashtag_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="-27dp"
+                    android:gravity="center" />
+
+                <!-- Hashtag Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="internshala.studentpartner"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500+ post"
+                        android:textSize="14sp"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- internshala.incampus -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="?android:attr/selectableItemBackground">
+
+                <!-- Hashtag Icon -->
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_hashtag_circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#"
+                    android:textSize="20sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="-27dp"
+                    android:gravity="center" />
+
+                <!-- Hashtag Info -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="internshala.incampus"
+                        android:textSize="16sp"
+                        android:textColor="#333333"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100+ post"
+                        android:textSize="14sp"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation for ScrollView-->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+
+    </LinearLayout>
+
+</RelativeLayout>
