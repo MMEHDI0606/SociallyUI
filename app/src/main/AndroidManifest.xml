@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Fifteen"
+            android:exported="false" />
+        <activity
+            android:name=".Fourteen"
+            android:exported="false" />
+        <activity
+            android:name=".Thirteen"
+            android:exported="false" />
+        <activity
+            android:name=".Twelve"
+            android:exported="false" />
+        <activity
+            android:name=".Eleven"
+            android:exported="false" />
+        <activity
+            android:name=".Ten"
+            android:exported="false" />
+        <activity
             android:name=".Nine"
             android:exported="false" />
         <activity

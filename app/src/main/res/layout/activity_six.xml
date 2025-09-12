@@ -33,8 +33,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_search"
-
-
+                android:id="@+id/search_btn"
                 android:contentDescription="Search" />
 
             <TextView
@@ -42,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Search"
+                android:id="@+id/searchbar"
                 android:textSize="16sp"
                 android:textColor="#999999"
                 android:layout_marginLeft="8dp" />

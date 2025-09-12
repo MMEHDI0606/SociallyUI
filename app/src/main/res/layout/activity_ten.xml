@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B85450"
+    android:id="@+id/page10">
+
+    <!-- Profile Section (Centered) -->
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Profile Picture Container -->
+        <FrameLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/iv_profile_picture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_mother" />
+
+        </FrameLayout>
+
+        <!-- Mother Label with Heart -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_caller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mother"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❤️"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Call Duration -->
+        <TextView
+            android:id="@+id/tv_call_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:12"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:alpha="0.9" />
+
+    </LinearLayout>
+
+    <!-- Control Buttons (Bottom) -->
+    <LinearLayout
+        android:id="@+id/control_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <!-- Menu/Options Button -->
+        <FrameLayout
+            android:id="@+id/btn_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_control_button"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu"
+                />
+
+        </FrameLayout>
+
+        <!-- End Call Button (Red) -->
+        <FrameLayout
+            android:id="@+id/btn_end_call"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/bg_end_call_button"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_call_end"
+                />
+
+        </FrameLayout>
+
+        <!-- Speaker Button -->
+        <FrameLayout
+            android:id="@+id/btn_speaker"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_control_button"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_volume_up"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

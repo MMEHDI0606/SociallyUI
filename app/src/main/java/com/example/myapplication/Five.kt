@@ -24,5 +24,12 @@ class Five : AppCompatActivity() {
             val intent = Intent(this, Six::class.java)
             startActivity(intent)
         }
+        val sendmsg = findViewById<ImageView>(R.id.send_msg)
+        sendmsg.setOnClickListener {
+            // Create Intent to navigate to Two activity
+            val intent = Intent(this, Eight::class.java)
+            startActivity(intent)
+        }
+
     }
 }

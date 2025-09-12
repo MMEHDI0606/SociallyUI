@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:id="@+id/page11">
+
+    <!-- Top Navigation Tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#FAFAFA"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Following"
+            android:textColor="#8E8E93"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="You"
+            android:textColor="#262626"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFEFEF" />
+
+    <!-- Activity Feed ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <!-- Activity Item 1: karenme liked 3 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:src="@drawable/profile_mother"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="karenme liked 3 posts. 2h"
+                        android:textSize="14sp"
+                        android:textColor="#262626" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Activity Item 2: kiero_d, zackjohn and craig_love liked joshua_l photo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="kiero_d, zackjohn and craig_love liked joshua_l photo. 3h"
+                    android:textSize="14sp"
+                    android:textColor="#262626" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_rounded_image"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 3: kiero_d started following craig_love -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="kiero_d started following craig_love. 3h"
+                    android:textSize="14sp"
+                    android:textColor="#262626" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/button_background"
+                    android:text="Following"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:paddingHorizontal="16dp"
+                    android:minWidth="0dp"
+                    app:backgroundTint="@null"
+
+                    />
+
+            </LinearLayout>
+
+            <!-- Activity Item 4: craig_love liked 8 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="craig_love liked 8 posts. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#262626" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="4dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Activity Item 5: maxjacobson and zackjohn liked mis_potter's post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="maxjacobson and zackjohn liked mis_potter's post. 3h"
+                    android:textSize="14sp"
+                    android:textColor="#262626" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_rounded_image"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 6: maxjacobson and craig_love liked martini_rond's post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="maxjacobson and craig_love liked martini_rond's post. 3h"
+                    android:textSize="14sp"
+                    android:textColor="#262626" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_rounded_image"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 7: karenme liked martini_rond's comment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:src="@drawable/profile_mother"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:text="karenme liked martini_rond's comment: @martini_rond Nice! 3h"
+                    android:textSize="14sp"
+                    android:textColor="#262626" />
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_rounded_image"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 8: maxjacobson liked 3 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maxjacobson liked 3 posts. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#262626" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:layout_marginEnd="4dp"
+                            android:scaleType="centerCrop" />
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:background="@drawable/bg_rounded_image"
+                            android:scaleType="centerCrop" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#FAFAFA"
+        android:gravity="center"
+        android:paddingHorizontal="24dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_filled"
+            android:scaleType="center" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search"
+            android:scaleType="center" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_add_box"
+            android:scaleType="center" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_heart_outline"
+            android:scaleType="center"
+            android:tint="#E91E63" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="1"
+            android:src="@drawable/profile_mother"
+            android:background="@drawable/bg_profile_circle"
+            android:scaleType="center" />
+
+    </LinearLayout>
+
+    <!-- Bottom Indicator -->
+    <View
+        android:layout_width="134dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
