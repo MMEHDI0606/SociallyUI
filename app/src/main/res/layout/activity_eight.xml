@@ -94,7 +94,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/gotomsg">
 
             <!-- joshua_l Message -->
             <LinearLayout
@@ -110,7 +111,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_joshua_profile"
+                    android:src="@drawable/jacob_w_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->
@@ -180,7 +181,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_karennne_profile"
+                    android:src="@drawable/karennne_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->
@@ -250,7 +251,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_martini_profile"
+                    android:src="@drawable/martini_rond_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->
@@ -320,7 +321,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_andrewww_profile"
+                    android:src="@drawable/andrewww_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->
@@ -390,7 +391,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_kiero_profile"
+                    android:src="@drawable/karennne_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->
@@ -460,7 +461,7 @@
                 <ImageView
                     android:layout_width="52dp"
                     android:layout_height="52dp"
-                    android:src="@drawable/img_maxjacobson_profile"
+                    android:src="@drawable/jacob_w_profile"
                     android:scaleType="centerCrop" />
 
                 <!-- Message Content -->

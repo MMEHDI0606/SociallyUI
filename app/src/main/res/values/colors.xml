@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="maroon_background">#964242</color>
+    <color name="call_maroon_background">#9A5A5B</color>
+    <color name="light_gray">#615E5E</color>
+    <color name="dark_gray">#2E2C2C</color>
 </resources>

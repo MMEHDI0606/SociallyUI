@@ -164,9 +164,9 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_eggs"
+                        android:src="@drawable/searchpageimage1"
                         android:scaleType="centerCrop"
-                        android:background="@drawable/bg_rounded_image" />
+                        android:background="@drawable/searchpageimage1" />
 
                 </FrameLayout>
 
@@ -179,7 +179,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_concert"
+                        android:src="@drawable/searchpageimage4"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -194,7 +194,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_road"
+                        android:src="@drawable/searchpageimage3"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -211,7 +211,7 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/bg_rounded_image"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/img_snow_book" />
+                        android:src="@drawable/searchpageimage2" />
 
                 </FrameLayout>
 
@@ -223,7 +223,6 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_architecture"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -239,7 +238,6 @@
                 android:orientation="vertical"
                 android:layout_marginLeft="4dp">
 
-                <!-- Person Sweater Image -->
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="240dp"
@@ -248,13 +246,11 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_person_sweater"
+                        android:src="@drawable/searchpageimage2"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
                 </FrameLayout>
-
-                <!-- Camping Night Image -->
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
@@ -263,7 +259,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_camping_night"
+                        android:src="@drawable/searchpageimage3"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -278,7 +274,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_wheat_field"
+                        android:src="@drawable/searchpageimage4"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -293,7 +289,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_desert_couple"
+                        android:src="@drawable/searchpageimage1"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -308,7 +304,6 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_woman_portrait"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -322,7 +317,6 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_code_screen"
                         android:scaleType="centerCrop"
                         android:background="@drawable/bg_rounded_image" />
 
@@ -336,97 +330,55 @@
 
     <!-- Bottom Navigation -->
     <LinearLayout
-        android:id="@+id/bottomNavigation"
+        android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:elevation="8dp">
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/home_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_home_filled"
+            android:contentDescription="Home icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home_filled"
-                android:contentDescription="Home" />
-
-            <!-- Active indicator -->
-            <View
-                android:layout_width="20dp"
-                android:layout_height="2dp"
-                android:background="#B85450"
-                android:layout_marginTop="4dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/search_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_search"
-                android:contentDescription="Search" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/add_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_add_box"
+            android:contentDescription="Add post icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_add_box"
-                android:contentDescription="Add" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/like_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_heart_outline"
+            android:contentDescription="Likes icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_favorite_outline"
-                android:contentDescription="Activity" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/profile_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/img_profile_current_user"
-                android:background="@drawable/bg_profile_circle"
-                android:scaleType="centerCrop" />
-
-        </LinearLayout>
-
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile icon" />
     </LinearLayout>
+
 
 </RelativeLayout>

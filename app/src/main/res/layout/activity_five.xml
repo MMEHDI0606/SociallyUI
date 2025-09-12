@@ -26,6 +26,7 @@
                 android:background="#FFFFFF">
 
                 <ImageView
+                    android:id="@+id/putstory"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_camera"
@@ -87,12 +88,12 @@
                             android:layout_height="70dp">
 
                             <ImageView
+                                android:id="@+id/cstory"
                                 android:layout_width="66dp"
                                 android:layout_height="66dp"
-                                android:src="@drawable/story_your"
+                                android:src="@drawable/wow"
                                 android:layout_gravity="center"
-                                android:background="@drawable/story_circle_background"
-                                android:scaleType="centerCrop" />
+                                    android:scaleType="centerCrop" />
 
                         </FrameLayout>
 
@@ -117,8 +118,7 @@
                         <ImageView
                             android:layout_width="66dp"
                             android:layout_height="66dp"
-                            android:src="@drawable/story_karennae"
-                            android:background="@drawable/story_circle_background"
+                            android:src="@drawable/karennne_profile"
                             android:scaleType="centerCrop" />
 
                         <TextView
@@ -142,8 +142,7 @@
                         <ImageView
                             android:layout_width="66dp"
                             android:layout_height="66dp"
-                            android:src="@drawable/story_zackjohn"
-                            android:background="@drawable/story_circle_background"
+                            android:src="@drawable/andrewww_profile"
                             android:scaleType="centerCrop" />
 
                         <TextView
@@ -167,8 +166,7 @@
                         <ImageView
                             android:layout_width="66dp"
                             android:layout_height="66dp"
-                            android:src="@drawable/story_kieron"
-                            android:background="@drawable/story_circle_background"
+                            android:src="@drawable/martini_rond_profile"
                             android:scaleType="centerCrop" />
 
                         <TextView
@@ -190,10 +188,10 @@
                         android:layout_marginRight="16dp">
 
                         <ImageView
+                            android:id="@+id/craigstory"
                             android:layout_width="66dp"
                             android:layout_height="66dp"
-                            android:src="@drawable/story_craig"
-                            android:background="@drawable/story_circle_background"
+                            android:src="@drawable/profile_jaqob"
                             android:scaleType="centerCrop" />
 
                         <TextView
@@ -224,13 +222,13 @@
                     android:orientation="horizontal"
                     android:gravity="center_vertical"
                     android:paddingLeft="16dp"
-                    android:paddingRight="16dp">
+                    android:paddingRight="16dp"
+                    android:id="@+id/celebrity">
 
                     <ImageView
                         android:layout_width="32dp"
                         android:layout_height="32dp"
-                        android:src="@drawable/profile_joshua"
-                        android:background="@drawable/profile_circle_background"
+                        android:src="@drawable/jacob_w_profile"
                         android:scaleType="centerCrop" />
 
                     <LinearLayout
@@ -283,7 +281,6 @@
                         android:text="1/3"
                         android:textSize="12sp"
                         android:textColor="#FFFFFF"
-                        android:background="@drawable/indicator_background"
                         android:padding="6dp"
                         android:layout_gravity="top|right"
                         android:layout_margin="12dp" />
@@ -364,91 +361,56 @@
 
     <!-- Bottom Navigation -->
     <LinearLayout
-        android:id="@+id/bottomNavigation"
+        android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true"
-        android:background="#FFFFFF"
-        android:elevation="8dp">
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/home_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_home_filled"
+            android:contentDescription="Home icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home_filled"
-                android:contentDescription="Home" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/search_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_search"
+            android:contentDescription="Search icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_search"
-                android:contentDescription="Search"
-                android:id="@+id/search_button"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/add_icon"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_add_box"
+            android:contentDescription="Add post icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_add_box"
-                android:contentDescription="Add" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/like_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:src="@drawable/ic_heart_outline"
+            android:contentDescription="Likes icon" />
 
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_favorite_outline"
-                android:contentDescription="Activity" />
-
-        </LinearLayout>
-
-        <LinearLayout
+        <ImageView
+            android:id="@+id/profile_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/profile_current_user"
-                android:background="@drawable/profile_circle_background"
-                android:scaleType="centerCrop" />
-
-        </LinearLayout>
-
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile icon" />
     </LinearLayout>
+
+
 
 </RelativeLayout>

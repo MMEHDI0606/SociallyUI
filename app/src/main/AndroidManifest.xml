@@ -7,10 +7,28 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity
+            android:name=".Twentyone"
+            android:exported="false" />
+        <activity
+            android:name=".Twenty"
+            android:exported="false" />
+        <activity
+            android:name=".Nineteen"
+            android:exported="false" />
+        <activity
+            android:name=".Eighteen"
+            android:exported="false" />
+        <activity
+            android:name=".Seventeen"
+            android:exported="false" />
+        <activity
+            android:name=".Sixteen"
+            android:exported="false" />
         <activity
             android:name=".Fifteen"
             android:exported="false" />

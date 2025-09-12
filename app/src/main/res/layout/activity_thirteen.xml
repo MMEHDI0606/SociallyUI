@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:id="@+id/page13">
 
     <!-- Top Navigation Bar -->
     <LinearLayout
@@ -217,7 +218,6 @@
                 android:paddingBottom="16dp">
 
                 <Button
-                    app:backgroundTint="@null"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#B85450"
@@ -279,12 +279,14 @@
                     android:gravity="center"
                     android:layout_marginEnd="16dp">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/bg_story_circle"
-                        android:scaleType="centerCrop" />
-
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image_story"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/friends"
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -303,11 +305,14 @@
                     android:gravity="center"
                     android:layout_marginEnd="16dp">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/bg_story_circle"
-                        android:scaleType="centerCrop" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/sports"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -326,11 +331,14 @@
                     android:orientation="vertical"
                     android:gravity="center">
 
-                    <ImageView
-                        android:layout_width="64dp"
-                        android:layout_height="64dp"
-                        android:background="@drawable/bg_story_circle"
-                        android:scaleType="centerCrop" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/design"
+                        />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -388,7 +396,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -396,7 +404,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -404,7 +412,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -420,7 +428,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -428,7 +436,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -436,7 +444,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -452,7 +460,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -460,7 +468,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -468,7 +476,7 @@
                         android:layout_width="0dp"
                         android:layout_height="124dp"
                         android:layout_weight="1"
-                        android:background="@drawable/bg_rounded_image"
+                        android:src="@drawable/tired"
                         android:scaleType="centerCrop"
                         android:layout_margin="1dp" />
 
@@ -480,58 +488,56 @@
 
     </ScrollView>
 
-    <!-- Bottom Navigation -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:paddingHorizontal="24dp">
+    <!-- Bottom Navigation --><LinearLayout
+    android:id="@+id/bottom_navigation_bar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    android:elevation="8dp"
+    android:gravity="center_vertical"
+    android:layout_alignParentBottom="true">
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_home_filled"
-            android:scaleType="center"
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home_filled"
+        android:contentDescription="Home icon" />
 
- />
+    <ImageView
+        android:id="@+id/search_icon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_search"
+        android:contentDescription="Search icon" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_search"
-            android:scaleType="center"
+    <ImageView
+        android:id="@+id/add_icon"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_add_box"
+        android:contentDescription="Add post icon" />
 
- />
+    <ImageView
+        android:id="@+id/like_icon_bottom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_heart_outline"
+        android:contentDescription="Likes icon" />
 
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_add_box"
-            android:scaleType="center"
-
- />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_heart_outline"
-            android:scaleType="center"
-
- />
-
-        <ImageView
-            android:layout_width="56dp"
-            android:layout_height="56dp"
-            android:src="@drawable/profile_circle_nav"
-            android:scaleType="centerCrop" />
-
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/profile_icon_bottom"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:src="@drawable/profileicon"
+        android:contentDescription="Profile icon" />
+</LinearLayout>
 
     <!-- Bottom Indicator -->
     <View

@@ -16,6 +16,7 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/gotofollowing"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -26,6 +27,7 @@
             android:fontFamily="sans-serif-medium" />
 
         <TextView
+            android:id="@+id/gotoyou"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -67,7 +69,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:background="@drawable/bg_profile_circle"
-                    android:src="@drawable/profile_mother"
+                    android:src="@drawable/karennne_profile"
                     android:scaleType="centerCrop" />
 
                 <LinearLayout
@@ -93,21 +95,21 @@
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:scaleType="centerCrop" />
 
                     </LinearLayout>
@@ -127,7 +129,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/profile_jaqob"
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -142,7 +144,7 @@
                 <ImageView
                     android:layout_width="44dp"
                     android:layout_height="44dp"
-                    android:background="@drawable/bg_rounded_image"
+                    android:background="@drawable/searchpageimage2"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -158,7 +160,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/martini_rond_profile"
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -196,7 +198,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/jacob_w_profile"
                     android:scaleType="centerCrop" />
 
                 <LinearLayout
@@ -222,42 +224,42 @@
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:scaleType="centerCrop" />
 
                     </LinearLayout>
@@ -271,14 +273,14 @@
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:scaleType="centerCrop" />
 
                     </LinearLayout>
@@ -298,7 +300,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/karennne_profile"
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -313,7 +315,7 @@
                 <ImageView
                     android:layout_width="44dp"
                     android:layout_height="44dp"
-                    android:background="@drawable/bg_rounded_image"
+                    android:background="@drawable/searchpageimage2"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -329,7 +331,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/martini_rond_profile"
                     android:scaleType="centerCrop" />
 
                 <TextView
@@ -344,7 +346,7 @@
                 <ImageView
                     android:layout_width="44dp"
                     android:layout_height="44dp"
-                    android:background="@drawable/bg_rounded_image"
+                    android:background="@drawable/searchpageimage2"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -376,7 +378,7 @@
                 <ImageView
                     android:layout_width="44dp"
                     android:layout_height="44dp"
-                    android:background="@drawable/bg_rounded_image"
+                    android:background="@drawable/searchpageimage2"
                     android:scaleType="centerCrop" />
 
             </LinearLayout>
@@ -392,7 +394,7 @@
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:background="@drawable/bg_profile_circle"
+                    android:background="@drawable/andrewww_profile"
                     android:scaleType="centerCrop" />
 
                 <LinearLayout
@@ -418,21 +420,21 @@
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:layout_marginEnd="4dp"
                             android:scaleType="centerCrop" />
 
                         <ImageView
                             android:layout_width="44dp"
                             android:layout_height="44dp"
-                            android:background="@drawable/bg_rounded_image"
+                            android:background="@drawable/searchpageimage2"
                             android:scaleType="centerCrop" />
 
                     </LinearLayout>
@@ -447,50 +449,54 @@
 
     <!-- Bottom Navigation -->
     <LinearLayout
+        android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
-        android:background="#FAFAFA"
-        android:gravity="center"
-        android:paddingHorizontal="24dp">
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
 
         <ImageView
+            android:id="@+id/home_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_home_filled"
-            android:scaleType="center" />
+            android:contentDescription="Home icon" />
 
         <ImageView
+            android:id="@+id/search_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_search"
-            android:scaleType="center" />
+            android:contentDescription="Search icon" />
 
         <ImageView
+            android:id="@+id/add_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_add_box"
-            android:scaleType="center" />
+            android:contentDescription="Add post icon" />
 
         <ImageView
+            android:id="@+id/like_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_heart_outline"
-            android:scaleType="center"
-            android:tint="#E91E63" />
+            android:contentDescription="Likes icon" />
 
         <ImageView
+            android:id="@+id/profile_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:src="@drawable/profile_mother"
-            android:background="@drawable/bg_profile_circle"
-            android:scaleType="center" />
-
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile icon" />
     </LinearLayout>
 
     <!-- Bottom Indicator -->

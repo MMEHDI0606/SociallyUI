@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:id="@+id/page12">
 
     <!-- Top Navigation Tabs -->
     <LinearLayout
@@ -426,56 +427,54 @@
 
     <!-- Bottom Navigation -->
     <LinearLayout
+        android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:gravity="center"
-        android:paddingHorizontal="24dp">
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
 
         <ImageView
+            android:id="@+id/home_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_home_filled"
-            android:scaleType="center"
-
- />
+            android:contentDescription="Home icon" />
 
         <ImageView
+            android:id="@+id/search_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_search"
-            android:scaleType="center"
-
- />
+            android:contentDescription="Search icon" />
 
         <ImageView
+            android:id="@+id/add_icon"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_add_box"
-            android:scaleType="center"
-
- />
+            android:contentDescription="Add post icon" />
 
         <ImageView
+            android:id="@+id/like_icon_bottom"
             android:layout_width="0dp"
-            android:layout_height="24dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
             android:src="@drawable/ic_heart_outline"
-            android:scaleType="center"
-            android:tint="#E91E63" />
+            android:contentDescription="Likes icon" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:id="@+id/profile_icon_bottom"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:src="@drawable/profile_mother"
-            android:background="@drawable/bg_profile_circle"
-            android:scaleType="center" />
-
+            android:src="@drawable/profileicon"
+            android:contentDescription="Profile icon" />
     </LinearLayout>
 
     <!-- Bottom Indicator -->
